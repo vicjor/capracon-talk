@@ -45,14 +45,14 @@ export default function EventPage({params} :{params: {id: string}}) {
   }
   return (
     <div className="m-auto">
-      <LoginForm event={event}/>
+      <EventForm event={event}/>
     </div>
   )
 }
 
 
 
-function LoginForm({event}: {event: Event}) {
+function EventForm({event}: {event: Event}) {
   const [name, setName] = useState('')
   const supabase = createClient()
 
